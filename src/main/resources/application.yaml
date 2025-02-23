@@ -4,4 +4,6 @@ server:
 datamall:
   acc-key: uupKqC2aS96flkKjDyNABQ==
   bus:
+    all-bus-info-url: https://datamall2.mytransport.sg/ltaodataservice/BusServices
     arrival-url: https://datamall2.mytransport.sg/ltaodataservice/v3/BusArrival
+    bus-route-info-url: https://datamall2.mytransport.sg/ltaodataservice/BusRoutes

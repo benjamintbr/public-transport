@@ -1,5 +1,6 @@
 package com.transport.service;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.*;
@@ -9,6 +10,7 @@ import org.springframework.web.client.RestTemplate;
 import java.util.Collections;
 
 @Service
+@Slf4j
 public class DataMallService {
 
     private final RestTemplate restTemplate;
@@ -28,6 +30,7 @@ public class DataMallService {
         HttpEntity<HttpHeaders> entity = new HttpEntity<>(headers);
         ResponseEntity<String> response = restTemplate.exchange(url, method, entity, String.class);
 
+        log.info("Response received : {}", response.getBody());
         return response.getBody();
     }
 }
