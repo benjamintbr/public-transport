@@ -1,0 +1,7 @@
+server:
+  port: 8080
+
+datamall:
+  acc-key: uupKqC2aS96flkKjDyNABQ==
+  bus:
+    arrival-url: https://datamall2.mytransport.sg/ltaodataservice/v3/BusArrival
